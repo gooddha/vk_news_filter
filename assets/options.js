@@ -78,6 +78,7 @@
 
         }
     }
+
     jQuery('#filter_switch').on('click', function() {
         switch_ui();
     });
@@ -104,6 +105,7 @@
             ,"show_adv":        false
             ,"show_adv_left":   false
             ,"likes_filter":    false
+            ,"top_chart_filter":false
             ,"debug_mode":      false
         };
     }
@@ -114,12 +116,14 @@
     }
     function options_number() {
         return {
-            "min_likes":     0
+            "min_likes":      0,
+            "top_chart_size": 0,
         };
     }
     function options_select() {
         return {
-             "likes_filter_op": 'gt'
+             "likes_filter_op":  'gt',
+             "top_chart_period": 'день'
         };
     }
     function options_text_groups() {

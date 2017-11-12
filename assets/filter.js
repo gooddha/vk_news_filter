@@ -14,6 +14,9 @@
             ,"likes_filter":    false
             ,"likes_filter_op": 'gt'
             ,"min_likes":       0
+            ,"top_chart_filter":false
+            ,"top_chart_size":  0
+            ,"top_chart_period":'day'
             ,"debug_mode":      false
         }
         ,config         = config_default
@@ -265,6 +268,7 @@
 
 		}
         ,filter         = function() {
+            console.log(config);
             var more_sels = [
                 '#show_more_link'
                 ,'#wall_more_link'
@@ -365,6 +369,7 @@
 
     config_init();
 
+    console.log(config);
     // filter feed on document load
     debug("initial filter call");
     filter();
