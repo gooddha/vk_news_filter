@@ -123,7 +123,7 @@ input::-webkit-inner-spin-button {
     opacity: 1;
 }
 
-#likes_filter_op {
+select {
     margin: 0 5px;
     border-radius: 5px;
     box-shadow: inset 0px 2px 6px -2px rgba(0,0,0,0.7);
@@ -131,11 +131,15 @@ input::-webkit-inner-spin-button {
     height: 26px;
 }
 
-#min_likes {
+input[type="number"] {
     width: 70px;
     color: black;
     position: relative;
     text-align: right;
+}
+
+#top_chart_size {
+    width: 50px;
 }
 
 .status {
